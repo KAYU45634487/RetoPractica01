@@ -21,12 +21,12 @@ public class LoginTest {
     @AfterClass
     public void tearDown()
     {
-       driver.quit();
+      driver.quit();
     }
 
     @Test
 public void testLoggingIntoApplication() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(5000);
        WebElement username= driver.findElement(By.name("username"));
        username.sendKeys("Admin");
 
